@@ -3,6 +3,17 @@ body {
     background-color:
 #34C0C1;
   }
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
   /* this changes the font for the heading */
   h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -30,7 +41,17 @@ body {
   .one{
     text-align: center;
   }
+  .three{
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  
+    .grid-container {
+      display: grid;
+  }
   /* nav bar below */
+  
       ul {
         list-style-type: none;
         margin: 0;
@@ -45,11 +66,19 @@ body {
       
       li a {
         display: block;
-        color: rgb(10, 10, 10);
+        color: rgb(0, 0, 0);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
+      /* Add a gray right border to all list items, except the last item (last-child) */
+li {
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+li:last-child {
+  border-right: none;
+}
       
       /* Change the link color to green on hover */
       li a:hover {
@@ -60,5 +89,64 @@ body {
         background-color: #4debc8;
         color: rgb(255, 250, 250);
       }
-
-
+      @media only screen and (max-width: 700px) 
+        body {
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 50px;
+            background-color: #f1f1f1;
+          }
+        }
+          
+          li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+          }
+          
+          /* Change the link color on hover */
+          li a:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+          }  
+          .active {
+            background-color: #4debc8;
+            color: rgb(255, 250, 250);
+          }  
+          ul {
+            border: 1px solid #555;
+          }
+          
+          li {
+            text-align: center;
+            border-bottom: 1px solid #555;
+          }
+          
+          li:last-child {
+            border-bottom: none;
+          }
+          @media only screen and (max-width: 600px) 
+            body {
+            
+          h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            font-weight: 40;
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+        }
+        p {
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 20px;
+          color: 
+          #FFFFFF;
+          font-weight: 2; 
+          margin-top: 100px;
+        margin-bottom: 164px;
+        margin-right: 150px;
+        margin-left: 80px;
+        }
